@@ -55,6 +55,9 @@ class MainViewController: UIViewController,Abc{
         return btn
     }()
     
+    @IBOutlet weak var myView: MyView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //    NSHomeDirectory()
@@ -64,11 +67,9 @@ class MainViewController: UIViewController,Abc{
     
         
         
-        let myview = MyView(frame: CGRect(x: 0, y: 200, width: 300, height: 300))
-        
-        myview.setOnClickedListener(x2: self)
-        
-        self.view.addSubview(myview);
+//        let myview = MyView(frame: CGRect(x: 0, y: 200, width: 300, height: 300))
+        myView.setOnClickedListener(x2: self)
+//        self.view.addSubview(myview);
         
         
         let af = AFHTTPSessionManager()

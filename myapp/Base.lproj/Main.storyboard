@@ -10,30 +10,13 @@
         <!--主页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="主页" customClass="MainViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="主页" customClass="MainViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQR-7m-6oX" customClass="Test" customModule="myapp" customModuleProvider="target">
-                                <rect key="frame" x="60" y="406" width="299" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILz-1L-Sj3" customClass="MyView" customModule="myapp" customModuleProvider="target">
-                                <rect key="frame" x="117" y="59" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Gef-It-sYT"/>
-                                    <constraint firstAttribute="width" constant="120" id="wwR-Qa-OEx"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="age">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQj-Xk-XID">
-                                <rect key="frame" x="286" y="52" width="46" height="30"/>
+                                <rect key="frame" x="94" y="20" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCa-Tz-7LH">
-                                <rect key="frame" x="294" y="74" width="31" height="30"/>
+                                <rect key="frame" x="55" y="20" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="跳转"/>
                                 <connections>
@@ -51,7 +34,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-Kg-eW1">
-                                <rect key="frame" x="119" y="112" width="240" height="128"/>
+                                <rect key="frame" x="67" y="58" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -82,7 +65,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjw-cK-91q">
-                                <rect key="frame" x="16" y="59" width="31" height="30"/>
+                                <rect key="frame" x="16" y="20" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="停止"/>
                                 <connections>
@@ -90,7 +73,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rCY-Pp-7bA">
-                                <rect key="frame" x="16" y="259" width="343" height="139"/>
+                                <rect key="frame" x="16" y="203" width="343" height="197"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="Cob-Py-bXq">
@@ -125,20 +108,22 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="GBn-hp-Nwr"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIM-VZ-etO" customClass="MyView" customModule="myapp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="428" width="333" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration">
                             <bool key="isElement" value="YES"/>
                         </accessibility>
-                        <constraints>
-                            <constraint firstItem="ILz-1L-Sj3" firstAttribute="leading" secondItem="AOk-Ba-31z" secondAttribute="leading" constant="117" id="87F-rm-Y0u"/>
-                            <constraint firstItem="ILz-1L-Sj3" firstAttribute="top" secondItem="AOk-Ba-31z" secondAttribute="top" constant="59" id="DpZ-yM-lri"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AOk-Ba-31z"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ztq-Td-G4t"/>
                     <connections>
                         <outlet property="myCollectionView" destination="rCY-Pp-7bA" id="mK7-pH-594"/>
+                        <outlet property="myView" destination="IIM-VZ-etO" id="0yq-c1-j6T"/>
                         <outlet property="mytableVIew" destination="Mgp-Kg-eW1" id="cZl-vR-c6Q"/>
                         <segue destination="DwR-Bw-5rX" kind="modal" identifier="nnn" id="Rkx-g5-HeC"/>
                     </connections>

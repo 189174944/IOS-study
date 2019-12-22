@@ -15,10 +15,8 @@ public protocol Abc {
     func myClicked();
 }
 
-@IBDesignable
 class MyView: UIView {
-    
-    @IBInspectable var age:Int=0
+
 
     @IBOutlet var content: UIView!
     
@@ -39,7 +37,7 @@ class MyView: UIView {
         initFromXIB()
         print("aDecoder")
         self.backgroundColor = UIColor.red
-        self.layer.borderWidth=20
+//        self.layer.borderWidth=20
     }
     
     func initFromXIB() {

@@ -48,18 +48,18 @@
             <point key="canvasLocation" x="-307.19999999999999" y="-386.35682158920542"/>
         </view>
         <view contentMode="scaleToFill" interfaceStyle="dark" id="fus-6I-tUE">
-            <rect key="frame" x="0.0" y="0.0" width="448" height="146"/>
+            <rect key="frame" x="0.0" y="0.0" width="466" height="273"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HI9-93-YRU">
-                    <rect key="frame" x="201" y="58" width="46" height="30"/>
+                    <rect key="frame" x="210" y="121.5" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="oHv-n4-kLa"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGN-WM-1v3">
-                    <rect key="frame" x="50" y="75" width="42" height="21"/>
+                    <rect key="frame" x="50" y="202" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-1313.5999999999999" y="-559.52023988005999"/>
+            <point key="canvasLocation" x="-1299.2" y="-452.02398800599701"/>
         </view>
     </objects>
 </document>
