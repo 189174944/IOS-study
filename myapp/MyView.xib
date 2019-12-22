@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyView" customModule="myapp" customModuleProvider="target">
+            <connections>
+                <outlet property="content" destination="iN0-l3-epB" id="3mU-C3-jn5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" interfaceStyle="dark" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="237"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-Ar-vrO">
+                    <rect key="frame" x="0.0" y="0.0" width="298" height="237"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKG-X3-RPs">
+                            <rect key="frame" x="126" y="103.5" width="46" height="30"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="click:" destination="-1" eventType="touchUpInside" id="QM9-OX-nBJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="qKG-X3-RPs" firstAttribute="centerY" secondItem="iIW-Ar-vrO" secondAttribute="centerY" id="GRJ-NP-4RE"/>
+                        <constraint firstItem="qKG-X3-RPs" firstAttribute="centerX" secondItem="iIW-Ar-vrO" secondAttribute="centerX" id="Vs4-TX-XdU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iIW-Ar-vrO" secondAttribute="bottom" id="Qrq-hC-6No"/>
+                <constraint firstItem="iIW-Ar-vrO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qy3-tq-td6"/>
+                <constraint firstItem="iIW-Ar-vrO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y0Z-3U-b61"/>
+                <constraint firstAttribute="trailing" secondItem="iIW-Ar-vrO" secondAttribute="trailing" id="bwM-tr-uyc"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-307.19999999999999" y="-386.35682158920542"/>
+        </view>
+        <view contentMode="scaleToFill" interfaceStyle="dark" id="fus-6I-tUE">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HI9-93-YRU">
+                    <rect key="frame" x="201" y="58" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="oHv-n4-kLa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGN-WM-1v3">
+                    <rect key="frame" x="50" y="75" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OGN-WM-1v3" secondAttribute="bottom" constant="50" id="DvF-QT-iQr"/>
+                <constraint firstItem="OGN-WM-1v3" firstAttribute="leading" secondItem="fus-6I-tUE" secondAttribute="leading" constant="50" id="Nny-1S-jBy"/>
+                <constraint firstItem="HI9-93-YRU" firstAttribute="centerY" secondItem="fus-6I-tUE" secondAttribute="centerY" id="WTg-lV-ZuE"/>
+                <constraint firstItem="HI9-93-YRU" firstAttribute="centerX" secondItem="fus-6I-tUE" secondAttribute="centerX" id="kCv-YB-7IP"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1313.5999999999999" y="-559.52023988005999"/>
+        </view>
+    </objects>
+</document>
