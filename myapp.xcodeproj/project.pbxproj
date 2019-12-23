@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04D48762CF8CD6E6B8698944 /* Pods_myapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AD56F26F42CC24E5A3574C /* Pods_myapp.framework */; };
+		E801493723B06C4300464271 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E801493623B06C4300464271 /* ShopViewController.swift */; };
 		E802A44D23AED7A500823A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E802A44F23AED7A500823A09 /* LaunchScreen.storyboard */; };
 		E80C5BB020F4A4A8009F8997 /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80C5BAE20F4A4A8009F8997 /* Test1ViewController.swift */; };
 		E83FB89820EA85A500DE492C /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83FB89720EA85A500DE492C /* Test.xib */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		9189E70C7A7DAE8A235CACB1 /* Pods-myapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myapp.debug.xcconfig"; path = "Target Support Files/Pods-myapp/Pods-myapp.debug.xcconfig"; sourceTree = "<group>"; };
 		E4AD56F26F42CC24E5A3574C /* Pods_myapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E801493623B06C4300464271 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		E802A44E23AED7A500823A09 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E802A45023AED8AA00823A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E80C5BAE20F4A4A8009F8997 /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				E88498B923A460D7009F451D /* MyTableViewCell.swift */,
 				E850825023AA117F00A96F99 /* myCollectionViewCell.swift */,
 				E802A44F23AED7A500823A09 /* LaunchScreen.storyboard */,
+				E801493623B06C4300464271 /* ShopViewController.swift */,
 			);
 			path = myapp;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				E896F1D7225765B400D0002D /* MyView.swift in Sources */,
 				E88498BA23A460D7009F451D /* MyTableViewCell.swift in Sources */,
+				E801493723B06C4300464271 /* ShopViewController.swift in Sources */,
 				E8ED6F922352F41400844026 /* iViewController.swift in Sources */,
 				E80C5BB020F4A4A8009F8997 /* Test1ViewController.swift in Sources */,
 				E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */,

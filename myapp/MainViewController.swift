@@ -20,7 +20,12 @@ class BasicTypes: HandyJSON {
 
 class MainViewController: UIViewController,Abc{
     func myClicked() {
-        print("Wangpengyu")
+        print("点击了")
+//        self.performSegue(withIdentifier: "pppp", sender: nil)
+
+        let my:ShopViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "myabc")
+        my.name="-______----___"
+        self.navigationController?.pushViewController(my, animated: true)
     }
     
     
@@ -137,24 +142,37 @@ class MainViewController: UIViewController,Abc{
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        print("OK")
         if segue.identifier == "nnn" {
             let contactVC = segue.destination as! iViewController
             contactVC.x=sender as? String
-                }
+        }
+        
+        if segue.identifier == "pppp" {
+            let sc = segue.destination as! ShopViewController
+          }
+        
     }
     
     @IBAction func getSegue(segue : UIStoryboardSegue){
+        print(segue.identifier)
         if segue.identifier == "mmmm"{
             print("返回了")
         }
+  
+
     }
+    
+    @IBAction func getSegue001(segue : UIStoryboardSegue){
+        print("segue2",segue.destination is MainViewController)
+        print(segue)
+        if segue.identifier=="pppp" {
+            print("返回了222")
+        }
+    }
+    
 }
 
 
