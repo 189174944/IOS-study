@@ -10,7 +10,7 @@ import UIKit
 //import MyLib
 import AFNetworking
 import HandyJSON
-
+import KJBannerView
 
 class BasicTypes: HandyJSON {
     var origin: String?
@@ -19,6 +19,9 @@ class BasicTypes: HandyJSON {
 }
 
 class MainViewController: UIViewController,Abc{
+    var temp:[Any] = []
+    var images:[Any] = ["http://localhost/xyz.jpg","http://localhost/xyz.jpg","http://localhost/xyz.jpg","http://localhost/xyz.jpg"]
+    
     func myClicked() {
         print("点击了")
 //        self.performSegue(withIdentifier: "pppp", sender: nil)
@@ -65,6 +68,9 @@ class MainViewController: UIViewController,Abc{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUpBanner()
+
 //    NSHomeDirectory()
 //        NSTemporaryDirectory()
 //        网络请求
@@ -132,6 +138,23 @@ class MainViewController: UIViewController,Abc{
 //        self.view.addSubview(myView)
 //        print("MainView初始化完成!")
 //        print("设备标识符",UIDevice.init().identifierForVendor!)
+        
+        
+        
+        
+                
+////                移除所有view
+//        for view in self.view.subviews {
+//            print(view)
+//        //             if view is UILabel {
+//        //                 view.removeFromSuperview()
+//        //             }
+//            view.removeFromSuperview()
+//        }
+//
+//        var label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100));
+//        label.text="Hello World"
+//        self.view.addSubview(label)
 
     }
     
@@ -199,5 +222,31 @@ extension MainViewController:UITableViewDelegate,UITableViewDataSource{
         cell!.textLabel?.text="Hello world"
         cell!.mytableViewCell.text="00000"
         return cell!
+    }
+}
+
+
+//轮播图设置
+
+extension MainViewController:KJBannerViewDelegate{
+    public func setUpBanner(){
+        let kv:KJBannerView = KJBannerView(frame: CGRect(x: 50, y: 700, width: self.view.frame.size.width-100, height: 80))
+        kv.autoScroll = true
+        kv.autoScrollTimeInterval=3
+        kv.itemSpace=10
+        kv.imgCornerRadius = 10
+        kv.pageControl.pageType = PageControlStyleRectangle
+        kv.delegate = self
+        kv.imageDatas = images
+        kv.imageType=KJBannerViewImageType.mix
+        kv.itemWidth = self.view.frame.size.width-120;
+        kv.kSelectBlock = { (kv,i) in
+            print(i)
+        }
+        self.view.addSubview(kv)
+        kv.isHidden = true
+    }
+    
+    func kj_BannerView(_ banner: KJBannerView, bannerViewCell bannercell: KJBannerViewCell, imageDatas: [Any], index: Int) {
     }
 }

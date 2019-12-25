@@ -17,7 +17,10 @@
 		E841B89C20EA576B0031889E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E841B89A20EA576B0031889E /* Main.storyboard */; };
 		E841B89E20EA576E0031889E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E841B89D20EA576E0031889E /* Assets.xcassets */; };
 		E850825123AA117F00A96F99 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850825023AA117F00A96F99 /* myCollectionViewCell.swift */; };
+		E86533AE23B25B830054B558 /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86533AC23B25B830054B558 /* ShopCollectionViewCell.swift */; };
+		E86533AF23B25B830054B558 /* ShopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86533AD23B25B830054B558 /* ShopCollectionViewCell.xib */; };
 		E88498BA23A460D7009F451D /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88498B923A460D7009F451D /* MyTableViewCell.swift */; };
+		E88F9B9823B26C4600800BA3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F9B9723B26C4600800BA3 /* Utils.swift */; };
 		E896F1D52257657700D0002D /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E896F1D42257657700D0002D /* MyView.xib */; };
 		E896F1D7225765B400D0002D /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E896F1D6225765B400D0002D /* MyView.swift */; };
 		E8ED6F922352F41400844026 /* iViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6F912352F41400844026 /* iViewController.swift */; };
@@ -44,14 +47,17 @@
 		E80C5BAE20F4A4A8009F8997 /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
 		E83FB89720EA85A500DE492C /* Test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		E83FB89920EA85CF00DE492C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		E841B89320EA576B0031889E /* myapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E841B89320EA576B0031889E /* 猛码.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "猛码.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E841B89620EA576B0031889E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E841B89B20EA576B0031889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E841B89D20EA576E0031889E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E841B8A220EA576E0031889E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E850825023AA117F00A96F99 /* myCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
+		E86533AC23B25B830054B558 /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
+		E86533AD23B25B830054B558 /* ShopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCollectionViewCell.xib; sourceTree = "<group>"; };
 		E86F9663214DCCE600A7657F /* MyLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLib.xcodeproj; path = ../MyLib/MyLib.xcodeproj; sourceTree = "<group>"; };
 		E88498B923A460D7009F451D /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		E88F9B9723B26C4600800BA3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E896F1D42257657700D0002D /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 		E896F1D6225765B400D0002D /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		E8ED6F912352F41400844026 /* iViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +101,7 @@
 		E841B89420EA576B0031889E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E841B89320EA576B0031889E /* myapp.app */,
+				E841B89320EA576B0031889E /* 猛码.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +109,8 @@
 		E841B89520EA576B0031889E /* myapp */ = {
 			isa = PBXGroup;
 			children = (
+				E8B17D0623B321A4005E311C /* swiftui */,
+				E86533B023B25B8D0054B558 /* cell */,
 				E841B89620EA576B0031889E /* AppDelegate.swift */,
 				E841B89A20EA576B0031889E /* Main.storyboard */,
 				E841B89D20EA576E0031889E /* Assets.xcassets */,
@@ -119,8 +127,18 @@
 				E850825023AA117F00A96F99 /* myCollectionViewCell.swift */,
 				E802A44F23AED7A500823A09 /* LaunchScreen.storyboard */,
 				E801493623B06C4300464271 /* ShopViewController.swift */,
+				E88F9B9723B26C4600800BA3 /* Utils.swift */,
 			);
 			path = myapp;
+			sourceTree = "<group>";
+		};
+		E86533B023B25B8D0054B558 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E86533AC23B25B830054B558 /* ShopCollectionViewCell.swift */,
+				E86533AD23B25B830054B558 /* ShopCollectionViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		E86F95D5214DB0A900A7657F /* Frameworks */ = {
@@ -137,6 +155,13 @@
 				E86F9668214DCCE700A7657F /* MyLib.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E8B17D0623B321A4005E311C /* swiftui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = swiftui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +183,7 @@
 			);
 			name = myapp;
 			productName = myapp;
-			productReference = E841B89320EA576B0031889E /* myapp.app */;
+			productReference = E841B89320EA576B0031889E /* 猛码.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -216,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86533AF23B25B830054B558 /* ShopCollectionViewCell.xib in Resources */,
 				E896F1D52257657700D0002D /* MyView.xib in Resources */,
 				E83FB89820EA85A500DE492C /* Test.xib in Resources */,
 				E841B89E20EA576E0031889E /* Assets.xcassets in Resources */,
@@ -278,11 +304,13 @@
 				E801493723B06C4300464271 /* ShopViewController.swift in Sources */,
 				E8ED6F922352F41400844026 /* iViewController.swift in Sources */,
 				E80C5BB020F4A4A8009F8997 /* Test1ViewController.swift in Sources */,
+				E86533AE23B25B830054B558 /* ShopCollectionViewCell.swift in Sources */,
 				E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */,
 				E841B89720EA576B0031889E /* AppDelegate.swift in Sources */,
 				E850825123AA117F00A96F99 /* myCollectionViewCell.swift in Sources */,
 				E83FB89A20EA85CF00DE492C /* Test.swift in Sources */,
 				E8EE081920F8EC160063C1B1 /* MainViewController.swift in Sources */,
+				E88F9B9823B26C4600800BA3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +466,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.myapp990";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "猛码";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -460,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.myapp990";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "猛码";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

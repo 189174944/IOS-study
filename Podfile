@@ -6,4 +6,6 @@ target 'myapp' do
   use_frameworks!
 	pod 'AFNetworking', '~> 3.1.0'
   pod 'HandyJSON', '~> 5.0.0'
+  pod 'Reachability', '~> 3.2'
+  pod 'KJBannerView', '~> 1.3.0'
 end

@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreLocation
+import Reachability
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,7 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locationManager?.requestAlwaysAuthorization()
         loadLocation()
         print("版本",UIDevice.current.systemVersion)
+
+//        NotificationCenter.default.addObserver(self, selector: #selector("xxx"), name: kReachabilityChangedNotification, object: nil)
         return true
+    }
+    
+    @objc func xxx(){
+        print("")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

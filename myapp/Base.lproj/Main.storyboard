@@ -10,7 +10,7 @@
         <!--主页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="主页" customClass="MainViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="主页" customClass="MainViewController" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="abcdef" id="Blo-ec-Ai1" customClass="MyTableViewCell" customModule="myapp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="abcdef" id="Blo-ec-Ai1" customClass="MyTableViewCell" customModule="猛码" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Blo-ec-Ai1" id="Fbh-VO-R1X">
@@ -83,7 +83,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="abc" id="fje-GV-T4O" customClass="myCollectionViewCell" customModule="myapp" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="abc" id="fje-GV-T4O" customClass="myCollectionViewCell" customModule="猛码" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -108,7 +108,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="GBn-hp-Nwr"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIM-VZ-etO" customClass="MyView" customModule="myapp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIM-VZ-etO" customClass="MyView" customModule="猛码" customModuleProvider="target">
                                 <rect key="frame" x="16" y="428" width="333" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -121,11 +121,33 @@
                                     <segue destination="J4X-5t-rG0" kind="show" identifier="pppp" id="yAX-Y2-VVa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGf-Wd-aGV">
+                                <rect key="frame" x="372" y="841" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YYZ-7F-N7h"/>
+                                    <constraint firstAttribute="width" constant="42" id="bye-Af-UPB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCF-cg-PHs">
+                                <rect key="frame" x="342" y="156" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ML1-lE-MqQ" kind="show" id="ao6-uV-svx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration">
                             <bool key="isElement" value="YES"/>
                         </accessibility>
+                        <constraints>
+                            <constraint firstItem="GGf-Wd-aGV" firstAttribute="bottom" secondItem="AOk-Ba-31z" secondAttribute="bottom" id="IKV-rf-uVc"/>
+                            <constraint firstItem="AOk-Ba-31z" firstAttribute="trailing" secondItem="GGf-Wd-aGV" secondAttribute="trailing" id="MYE-f7-Uef"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AOk-Ba-31z"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ztq-Td-G4t"/>
@@ -143,7 +165,7 @@
         <!--View Controller-->
         <scene sceneID="dpR-Jp-MnA">
             <objects>
-                <viewController id="aLl-d7-GaR" customClass="IIIViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aLl-d7-GaR" customClass="IIIViewController" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dky-rZ-WV2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +203,7 @@
             <objects>
                 <viewController id="HYm-8d-dsi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Alj-4h-me1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5Lv-oL-fea"/>
@@ -210,14 +232,26 @@
         <!--Item 1-->
         <scene sceneID="rjg-lP-r9e">
             <objects>
-                <viewController id="Hto-qM-bKn" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Hto-qM-bKn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gl8-bf-SJf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9E7-iZ-Crv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="fnc-BZ-I5E">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="cKv-ly-dVS"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3b4-ki-ZMV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="8pZ-Gi-g5Y"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4UG-sy-5px" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,18 +260,11 @@
         <!--Shop View Controller-->
         <scene sceneID="8Nl-o9-etZ">
             <objects>
-                <viewController storyboardIdentifier="myabc" modalPresentationStyle="fullScreen" id="J4X-5t-rG0" customClass="ShopViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myabc" modalPresentationStyle="fullScreen" id="J4X-5t-rG0" customClass="ShopViewController" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JRf-vS-g0q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-LR-rJw">
-                                <rect key="frame" x="186" y="438" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVJ-kx-DdG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -259,6 +286,15 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyM-lS-Fg1">
+                                <rect key="frame" x="0.0" y="95" width="414" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -275,6 +311,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="orh-fg-jvf"/>
                     <connections>
+                        <outlet property="myWebView" destination="lyM-lS-Fg1" id="9KM-Nv-eld"/>
                         <segue destination="o32-A4-hCv" kind="unwind" identifier="myexit" unwindAction="getSegue001WithSegue:" id="2nm-UA-LUB"/>
                     </connections>
                 </viewController>
@@ -283,10 +320,70 @@
             </objects>
             <point key="canvasLocation" x="2747.826086956522" y="89.732142857142847"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ddl-Bk-oxx">
+            <objects>
+                <viewController storyboardIdentifier="shopDetail" id="a1a-3I-ySY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Svj-NN-n6U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFJ-tG-3Cc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="商品详情" id="I8b-3J-OUB">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="lzq-hp-S7e">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="i8t-O5-9d6" kind="unwind" unwindAction="shopDetailWithSegue:" id="p7h-jg-SZm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="分享" id="pSV-RS-ofZ">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGU-n1-qxh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WC-IT-egb">
+                                        <rect key="frame" x="29" y="18" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aGU-n1-qxh" firstAttribute="bottom" secondItem="ZRz-cT-s5e" secondAttribute="bottom" id="6Pn-c6-S3D"/>
+                            <constraint firstItem="aGU-n1-qxh" firstAttribute="trailing" secondItem="ZRz-cT-s5e" secondAttribute="trailing" id="CXM-Ha-XFl"/>
+                            <constraint firstItem="aGU-n1-qxh" firstAttribute="leading" secondItem="ZRz-cT-s5e" secondAttribute="leading" id="Ikd-v4-1O8"/>
+                            <constraint firstItem="cFJ-tG-3Cc" firstAttribute="trailing" secondItem="aGU-n1-qxh" secondAttribute="trailing" id="VKu-5c-Mdy"/>
+                            <constraint firstItem="cFJ-tG-3Cc" firstAttribute="top" secondItem="ZRz-cT-s5e" secondAttribute="top" id="Wyt-dx-IEe"/>
+                            <constraint firstItem="aGU-n1-qxh" firstAttribute="top" secondItem="cFJ-tG-3Cc" secondAttribute="bottom" id="tsI-7t-3ba"/>
+                            <constraint firstItem="cFJ-tG-3Cc" firstAttribute="leading" secondItem="ZRz-cT-s5e" secondAttribute="leading" id="xlz-4X-Ig3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZRz-cT-s5e"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z62-KT-Xb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="i8t-O5-9d6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3592.753623188406" y="87.723214285714278"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zBd-PB-DKl">
             <objects>
-                <tabBarController id="ML1-lE-MqQ" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="ML1-lE-MqQ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="4Fb-Et-WEF"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hZa-dG-Jof">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -305,7 +402,7 @@
         <!--View Controller-->
         <scene sceneID="Ht4-tK-gp2">
             <objects>
-                <viewController id="DwR-Bw-5rX" customClass="iViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DwR-Bw-5rX" customClass="iViewController" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cub-t1-XuA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -342,7 +439,7 @@
         <!--Test1 View Controller-->
         <scene sceneID="lxM-OE-diL">
             <objects>
-                <viewController id="AIk-zS-6Ul" customClass="Test1ViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AIk-zS-6Ul" customClass="Test1ViewController" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="saU-xY-JZi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

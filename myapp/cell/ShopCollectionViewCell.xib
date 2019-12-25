@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="ShopCollectionViewCell" customModule="myapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="294"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="294"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view tag="1001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVu-EC-6W9">
+                        <rect key="frame" x="0.0" y="0.0" width="404" height="294"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQB-kC-e0N">
+                                <rect key="frame" x="10" y="263" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90元" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSo-jP-uGI">
+                                <rect key="frame" x="335.5" y="40" width="58.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kSo-jP-uGI" secondAttribute="trailing" constant="10" id="CjE-RL-1MZ"/>
+                            <constraint firstAttribute="bottom" secondItem="IQB-kC-e0N" secondAttribute="bottom" constant="10" id="D34-Aa-EUi"/>
+                            <constraint firstItem="kSo-jP-uGI" firstAttribute="top" secondItem="wVu-EC-6W9" secondAttribute="top" constant="40" id="UEH-lx-xf4"/>
+                            <constraint firstItem="IQB-kC-e0N" firstAttribute="leading" secondItem="wVu-EC-6W9" secondAttribute="leading" constant="10" id="sCn-IB-jcN"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wVu-EC-6W9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ADQ-cO-tME"/>
+                <constraint firstAttribute="bottom" secondItem="wVu-EC-6W9" secondAttribute="bottom" id="B0g-39-Dk6"/>
+                <constraint firstItem="wVu-EC-6W9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mty-3X-hBP"/>
+                <constraint firstAttribute="trailing" secondItem="wVu-EC-6W9" secondAttribute="trailing" id="tVL-Sg-gVd"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="404" height="294"/>
+            <point key="canvasLocation" x="-171.01449275362319" y="-1.3392857142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
