@@ -23,6 +23,7 @@
 		E88F9B9823B26C4600800BA3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F9B9723B26C4600800BA3 /* Utils.swift */; };
 		E896F1D52257657700D0002D /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E896F1D42257657700D0002D /* MyView.xib */; };
 		E896F1D7225765B400D0002D /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E896F1D6225765B400D0002D /* MyView.swift */; };
+		E8C3D47523B505A700C1C89D /* myPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3D47423B505A700C1C89D /* myPageViewController.swift */; };
 		E8ED6F922352F41400844026 /* iViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6F912352F41400844026 /* iViewController.swift */; };
 		E8EE081920F8EC160063C1B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE081820F8EC160063C1B1 /* MainViewController.swift */; };
 		E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */; };
@@ -60,6 +61,7 @@
 		E88F9B9723B26C4600800BA3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E896F1D42257657700D0002D /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 		E896F1D6225765B400D0002D /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		E8C3D47423B505A700C1C89D /* myPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPageViewController.swift; sourceTree = "<group>"; };
 		E8ED6F912352F41400844026 /* iViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iViewController.swift; sourceTree = "<group>"; };
 		E8EE081820F8EC160063C1B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IIIViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				E802A44F23AED7A500823A09 /* LaunchScreen.storyboard */,
 				E801493623B06C4300464271 /* ShopViewController.swift */,
 				E88F9B9723B26C4600800BA3 /* Utils.swift */,
+				E8C3D47423B505A700C1C89D /* myPageViewController.swift */,
 			);
 			path = myapp;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E896F1D7225765B400D0002D /* MyView.swift in Sources */,
+				E8C3D47523B505A700C1C89D /* myPageViewController.swift in Sources */,
 				E88498BA23A460D7009F451D /* MyTableViewCell.swift in Sources */,
 				E801493723B06C4300464271 /* ShopViewController.swift in Sources */,
 				E8ED6F922352F41400844026 /* iViewController.swift in Sources */,
@@ -388,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

@@ -66,9 +66,12 @@ class MainViewController: UIViewController,Abc{
     @IBOutlet weak var myView: MyView!
     
     
+    
+    var i:Int = 100
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("viewDidLoad")
+
         setUpBanner()
 
 //    NSHomeDirectory()
@@ -248,5 +251,10 @@ extension MainViewController:KJBannerViewDelegate{
     }
     
     func kj_BannerView(_ banner: KJBannerView, bannerViewCell bannercell: KJBannerViewCell, imageDatas: [Any], index: Int) {
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("appear")
     }
 }
