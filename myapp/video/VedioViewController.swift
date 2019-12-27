@@ -25,11 +25,13 @@ class VideoViewController: UIViewController {
         layer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         layer.frame = self.view.bounds
         myView.layer.addSublayer(layer)
-        myView.backgroundColor = UIColor.yellow
         player?.play()
         NotificationCenter.default.addObserver(self, selector: #selector(playEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
     }
     override func viewWillAppear(_ animated: Bool) {
+        player?.pause()
+    }
+    override func viewDidAppear(_ animated: Bool) {
         player?.play()
     }
     

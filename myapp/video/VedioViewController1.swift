@@ -20,17 +20,19 @@ class VideoViewController1: UIViewController {
         super.viewDidLoad()
         print("显示了")
         print("加载了",URL(fileURLWithPath: Bundle.main.path(forResource: "a", ofType: "MP4")!))
-        avItem = AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "douyin", ofType: "MP4")!))
+        avItem = AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "a", ofType: "MP4")!))
         player = AVPlayer(playerItem: avItem)
         let layer = AVPlayerLayer(player: player)
         layer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         layer.frame = self.view.bounds
         myView.layer.addSublayer(layer)
-        myView.backgroundColor = UIColor.yellow
         player?.play()
         NotificationCenter.default.addObserver(self, selector: #selector(playEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
     }
     override func viewWillAppear(_ animated: Bool) {
+        player?.pause()
+    }
+    override func viewDidAppear(_ animated: Bool) {
         player?.play()
     }
     
