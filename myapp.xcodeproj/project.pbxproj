@@ -24,6 +24,12 @@
 		E896F1D52257657700D0002D /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E896F1D42257657700D0002D /* MyView.xib */; };
 		E896F1D7225765B400D0002D /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E896F1D6225765B400D0002D /* MyView.swift */; };
 		E8C3D47523B505A700C1C89D /* myPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3D47423B505A700C1C89D /* myPageViewController.swift */; };
+		E8CB364E23B5AEE200DC04C3 /* VedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB364D23B5AEE200DC04C3 /* VedioViewController.swift */; };
+		E8CB365323B5B69B00DC04C3 /* douyin.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = E8CB365123B5B40C00DC04C3 /* douyin.MP4 */; };
+		E8CB365523B5C34500DC04C3 /* VedioViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB365423B5C34500DC04C3 /* VedioViewController1.swift */; };
+		E8CB365723B5C35700DC04C3 /* VedioViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB365623B5C35700DC04C3 /* VedioViewController3.swift */; };
+		E8CB365A23B5C55E00DC04C3 /* a.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = E8CB365823B5C53800DC04C3 /* a.MP4 */; };
+		E8CB365B23B5C55E00DC04C3 /* b.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = E8CB365923B5C53800DC04C3 /* b.MP4 */; };
 		E8ED6F922352F41400844026 /* iViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6F912352F41400844026 /* iViewController.swift */; };
 		E8EE081920F8EC160063C1B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE081820F8EC160063C1B1 /* MainViewController.swift */; };
 		E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */; };
@@ -62,6 +68,12 @@
 		E896F1D42257657700D0002D /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 		E896F1D6225765B400D0002D /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		E8C3D47423B505A700C1C89D /* myPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPageViewController.swift; sourceTree = "<group>"; };
+		E8CB364D23B5AEE200DC04C3 /* VedioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioViewController.swift; sourceTree = "<group>"; };
+		E8CB365123B5B40C00DC04C3 /* douyin.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = douyin.MP4; sourceTree = "<group>"; };
+		E8CB365423B5C34500DC04C3 /* VedioViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioViewController1.swift; sourceTree = "<group>"; };
+		E8CB365623B5C35700DC04C3 /* VedioViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioViewController3.swift; sourceTree = "<group>"; };
+		E8CB365823B5C53800DC04C3 /* a.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = a.MP4; path = ../../../../Downloads/a.MP4; sourceTree = "<group>"; };
+		E8CB365923B5C53800DC04C3 /* b.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = b.MP4; path = ../../../../Downloads/b.MP4; sourceTree = "<group>"; };
 		E8ED6F912352F41400844026 /* iViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iViewController.swift; sourceTree = "<group>"; };
 		E8EE081820F8EC160063C1B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IIIViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +123,8 @@
 		E841B89520EA576B0031889E /* myapp */ = {
 			isa = PBXGroup;
 			children = (
+				E8CB365123B5B40C00DC04C3 /* douyin.MP4 */,
+				E8CB364C23B5AEB300DC04C3 /* video */,
 				E8B17D0623B321A4005E311C /* swiftui */,
 				E86533B023B25B8D0054B558 /* cell */,
 				E841B89620EA576B0031889E /* AppDelegate.swift */,
@@ -165,6 +179,18 @@
 			children = (
 			);
 			path = swiftui;
+			sourceTree = "<group>";
+		};
+		E8CB364C23B5AEB300DC04C3 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				E8CB365823B5C53800DC04C3 /* a.MP4 */,
+				E8CB365923B5C53800DC04C3 /* b.MP4 */,
+				E8CB364D23B5AEE200DC04C3 /* VedioViewController.swift */,
+				E8CB365423B5C34500DC04C3 /* VedioViewController1.swift */,
+				E8CB365623B5C35700DC04C3 /* VedioViewController3.swift */,
+			);
+			path = video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +270,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8CB365A23B5C55E00DC04C3 /* a.MP4 in Resources */,
+				E8CB365B23B5C55E00DC04C3 /* b.MP4 in Resources */,
+				E8CB365323B5B69B00DC04C3 /* douyin.MP4 in Resources */,
 				E86533AF23B25B830054B558 /* ShopCollectionViewCell.xib in Resources */,
 				E896F1D52257657700D0002D /* MyView.xib in Resources */,
 				E83FB89820EA85A500DE492C /* Test.xib in Resources */,
@@ -307,6 +336,7 @@
 				E88498BA23A460D7009F451D /* MyTableViewCell.swift in Sources */,
 				E801493723B06C4300464271 /* ShopViewController.swift in Sources */,
 				E8ED6F922352F41400844026 /* iViewController.swift in Sources */,
+				E8CB365523B5C34500DC04C3 /* VedioViewController1.swift in Sources */,
 				E80C5BB020F4A4A8009F8997 /* Test1ViewController.swift in Sources */,
 				E86533AE23B25B830054B558 /* ShopCollectionViewCell.swift in Sources */,
 				E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */,
@@ -314,6 +344,8 @@
 				E850825123AA117F00A96F99 /* myCollectionViewCell.swift in Sources */,
 				E83FB89A20EA85CF00DE492C /* Test.swift in Sources */,
 				E8EE081920F8EC160063C1B1 /* MainViewController.swift in Sources */,
+				E8CB364E23B5AEE200DC04C3 /* VedioViewController.swift in Sources */,
+				E8CB365723B5C35700DC04C3 /* VedioViewController3.swift in Sources */,
 				E88F9B9823B26C4600800BA3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

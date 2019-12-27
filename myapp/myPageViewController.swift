@@ -15,17 +15,16 @@ class myPageViewController: UIPageViewController,UIPageViewControllerDelegate,UI
           }else if(viewController.restorationIdentifier=="page2"){
               return cv[0]
           }
-          return nil
+          return cv[2]
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        
         if viewController.restorationIdentifier=="page1" {
             return cv[1]
         }else if(viewController.restorationIdentifier=="page2"){
             return cv[2]
         }
-        return nil
+        return cv[0]
     }
     
     var cv:[UIViewController] = []

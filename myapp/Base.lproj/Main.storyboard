@@ -181,17 +181,17 @@
         <!--My Page View Controller-->
         <scene sceneID="0sc-2Q-jSh">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="sCV-kA-N3U" customClass="myPageViewController" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="sCV-kA-N3U" customClass="myPageViewController" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lwb-eW-dEm"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGt-bU-vub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2736" y="724"/>
         </scene>
-        <!--View Controller-->
+        <!--Video View Controller1-->
         <scene sceneID="ab2-mS-4ES">
             <objects>
-                <viewController restorationIdentifier="page1" storyboardIdentifier="page1" id="Xs9-ee-8ng" sceneMemberID="viewController">
+                <viewController restorationIdentifier="page1" storyboardIdentifier="page1" id="Xs9-ee-8ng" customClass="VideoViewController1" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4lC-yt-8kE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,15 +205,18 @@
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gQA-CS-hcQ"/>
                     </view>
+                    <connections>
+                        <outlet property="myView" destination="4lC-yt-8kE" id="kKx-36-2co"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaN-V8-nBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3288" y="1366"/>
         </scene>
-        <!--View Controller-->
+        <!--Video View Controller-->
         <scene sceneID="IVa-ee-50m">
             <objects>
-                <viewController restorationIdentifier="page2" storyboardIdentifier="page2" id="KwV-tF-1Fi" sceneMemberID="viewController">
+                <viewController restorationIdentifier="page2" storyboardIdentifier="page2" id="KwV-tF-1Fi" customClass="VideoViewController" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FIY-Gr-bSp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,19 +231,55 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="2"/>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NYX-c0-zoV">
+                                <rect key="frame" x="336" y="485" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Gb-J7-Es5">
+                                <rect key="frame" x="336" y="549" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gd6-Aa-lWa">
+                                <rect key="frame" x="336" y="613" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="x6f-gS-obo"/>
                     </view>
+                    <connections>
+                        <outlet property="myView" destination="FIY-Gr-bSp" id="wta-4b-9vT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0eI-Ku-zRz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2567" y="1372"/>
+            <point key="canvasLocation" x="-2568.1159420289855" y="1371.4285714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Video View Controller3-->
         <scene sceneID="dJb-yt-bQQ">
             <objects>
-                <viewController restorationIdentifier="page3" storyboardIdentifier="page3" id="RMh-Pe-e6J" sceneMemberID="viewController">
+                <viewController restorationIdentifier="page3" storyboardIdentifier="page3" id="RMh-Pe-e6J" customClass="VideoViewController3" customModule="猛码" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zpa-Kh-atU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,6 +308,9 @@
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wW0-Jg-yGm"/>
                     </view>
+                    <connections>
+                        <outlet property="myView" destination="zpa-Kh-atU" id="COF-6N-1bQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jqO-4R-EHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
