@@ -10,17 +10,17 @@ import UIKit
 import MediaPlayer
 
 class VideoViewController1: UIViewController {
-    
+
 
     @IBOutlet var myView: UIView!
-    var avItem:AVPlayerItem? = nil;
-    var player:AVPlayer?=nil
-    
+    var avItem: AVPlayerItem? = nil;
+    var player: AVPlayer? = nil
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print("显示了")
-        print("加载了",URL(fileURLWithPath: Bundle.main.path(forResource: "a", ofType: "MP4")!))
-        avItem = AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "a", ofType: "MP4")!))
+        print("加载了", URL(fileURLWithPath: Bundle.main.path(forResource: "douyin", ofType: "MP4")!))
+        avItem = AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "douyin", ofType: "MP4")!))
         player = AVPlayer(playerItem: avItem)
         let layer = AVPlayerLayer(player: player)
         layer.videoGravity = AVLayerVideoGravity.resizeAspectFill
@@ -35,16 +35,16 @@ class VideoViewController1: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         player?.play()
     }
-    
+
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-    
-    @objc func playEnd(){
+
+    @objc func playEnd() {
         avItem?.seek(to: CMTime.zero, completionHandler: nil)
         player?.play()
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         player?.pause()
     }

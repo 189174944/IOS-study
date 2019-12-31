@@ -11,6 +11,7 @@
 		E801493723B06C4300464271 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E801493623B06C4300464271 /* ShopViewController.swift */; };
 		E802A44D23AED7A500823A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E802A44F23AED7A500823A09 /* LaunchScreen.storyboard */; };
 		E80C5BB020F4A4A8009F8997 /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80C5BAE20F4A4A8009F8997 /* Test1ViewController.swift */; };
+		E8307CFB23B73D4B00E9E6A6 /* douyin.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = E8CB365123B5B40C00DC04C3 /* douyin.MP4 */; };
 		E83FB89820EA85A500DE492C /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83FB89720EA85A500DE492C /* Test.xib */; };
 		E83FB89A20EA85CF00DE492C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83FB89920EA85CF00DE492C /* Test.swift */; };
 		E841B89720EA576B0031889E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E841B89620EA576B0031889E /* AppDelegate.swift */; };
@@ -25,11 +26,8 @@
 		E896F1D7225765B400D0002D /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E896F1D6225765B400D0002D /* MyView.swift */; };
 		E8C3D47523B505A700C1C89D /* myPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3D47423B505A700C1C89D /* myPageViewController.swift */; };
 		E8CB364E23B5AEE200DC04C3 /* VedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB364D23B5AEE200DC04C3 /* VedioViewController.swift */; };
-		E8CB365323B5B69B00DC04C3 /* douyin.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = E8CB365123B5B40C00DC04C3 /* douyin.MP4 */; };
 		E8CB365523B5C34500DC04C3 /* VedioViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB365423B5C34500DC04C3 /* VedioViewController1.swift */; };
 		E8CB365723B5C35700DC04C3 /* VedioViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB365623B5C35700DC04C3 /* VedioViewController3.swift */; };
-		E8CB365A23B5C55E00DC04C3 /* a.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = E8CB365823B5C53800DC04C3 /* a.MP4 */; };
-		E8CB365B23B5C55E00DC04C3 /* b.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = E8CB365923B5C53800DC04C3 /* b.MP4 */; };
 		E8ED6F922352F41400844026 /* iViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6F912352F41400844026 /* iViewController.swift */; };
 		E8EE081920F8EC160063C1B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE081820F8EC160063C1B1 /* MainViewController.swift */; };
 		E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */; };
@@ -101,6 +99,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E8307CFA23B73A8600E9E6A6 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pop;
+			sourceTree = "<group>";
+		};
 		E841B88A20EA576B0031889E = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +128,7 @@
 		E841B89520EA576B0031889E /* myapp */ = {
 			isa = PBXGroup;
 			children = (
-				E8CB365123B5B40C00DC04C3 /* douyin.MP4 */,
+				E8307CFA23B73A8600E9E6A6 /* pop */,
 				E8CB364C23B5AEB300DC04C3 /* video */,
 				E8B17D0623B321A4005E311C /* swiftui */,
 				E86533B023B25B8D0054B558 /* cell */,
@@ -184,6 +189,7 @@
 		E8CB364C23B5AEB300DC04C3 /* video */ = {
 			isa = PBXGroup;
 			children = (
+				E8CB365123B5B40C00DC04C3 /* douyin.MP4 */,
 				E8CB365823B5C53800DC04C3 /* a.MP4 */,
 				E8CB365923B5C53800DC04C3 /* b.MP4 */,
 				E8CB364D23B5AEE200DC04C3 /* VedioViewController.swift */,
@@ -270,9 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8CB365A23B5C55E00DC04C3 /* a.MP4 in Resources */,
-				E8CB365B23B5C55E00DC04C3 /* b.MP4 in Resources */,
-				E8CB365323B5B69B00DC04C3 /* douyin.MP4 in Resources */,
+				E8307CFB23B73D4B00E9E6A6 /* douyin.MP4 in Resources */,
 				E86533AF23B25B830054B558 /* ShopCollectionViewCell.xib in Resources */,
 				E896F1D52257657700D0002D /* MyView.xib in Resources */,
 				E83FB89820EA85A500DE492C /* Test.xib in Resources */,
@@ -505,7 +509,7 @@
 				PRODUCT_NAME = "猛码";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -527,7 +531,7 @@
 				PRODUCT_NAME = "猛码";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

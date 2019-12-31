@@ -18,8 +18,8 @@ class VideoViewController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("显示了")
-        print("加载了",URL(fileURLWithPath: Bundle.main.path(forResource: "b", ofType: "MP4")!))
-        avItem = AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "b", ofType: "MP4")!))
+        print("加载了",URL(fileURLWithPath: Bundle.main.path(forResource: "douyin", ofType: "MP4")!))
+        avItem = AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "douyin", ofType: "MP4")!))
         player = AVPlayer(playerItem: avItem)
         let layer = AVPlayerLayer(player: player)
         layer.videoGravity = AVLayerVideoGravity.resizeAspectFill

@@ -131,6 +131,13 @@
                                     <segue destination="sCV-kA-N3U" kind="show" id="b0t-8o-M5C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQu-Iy-lSy">
+                                <rect key="frame" x="344" y="0.0" width="31" height="30"/>
+                                <state key="normal" title="弹框"/>
+                                <connections>
+                                    <action selector="popBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iZC-X2-JSm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration">
@@ -140,6 +147,8 @@
                             <constraint firstItem="AOk-Ba-31z" firstAttribute="bottom" secondItem="Slv-2S-j8U" secondAttribute="bottom" id="FTu-Op-ZWk"/>
                             <constraint firstItem="AOk-Ba-31z" firstAttribute="bottom" secondItem="rgN-he-mm4" secondAttribute="bottom" id="J46-Q1-vxH"/>
                             <constraint firstItem="rgN-he-mm4" firstAttribute="leading" secondItem="Slv-2S-j8U" secondAttribute="trailing" constant="8" symbolic="YES" id="Kd8-NH-p9a"/>
+                            <constraint firstItem="AOk-Ba-31z" firstAttribute="trailing" secondItem="BQu-Iy-lSy" secondAttribute="trailing" id="QY1-rs-4MK"/>
+                            <constraint firstItem="BQu-Iy-lSy" firstAttribute="top" secondItem="AOk-Ba-31z" secondAttribute="top" id="jQt-Ww-eCW"/>
                             <constraint firstItem="Slv-2S-j8U" firstAttribute="leading" secondItem="AOk-Ba-31z" secondAttribute="leading" id="oeW-CV-4uM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AOk-Ba-31z"/>
@@ -155,6 +164,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135.19999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TH4-Is-NCj">
+            <objects>
+                <viewController storyboardIdentifier="popViewController" id="7ez-29-Lgb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVp-5V-sd5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0pg-zK-pV2">
+                                <rect key="frame" x="58" y="73" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fHH-4h-Rf5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ag-TC-4rJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="-427"/>
         </scene>
         <!--My Page View Controller-->
         <scene sceneID="0sc-2Q-jSh">
