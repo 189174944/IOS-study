@@ -31,6 +31,7 @@
 		E8ED6F922352F41400844026 /* iViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6F912352F41400844026 /* iViewController.swift */; };
 		E8EE081920F8EC160063C1B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE081820F8EC160063C1B1 /* MainViewController.swift */; };
 		E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */; };
+		E8FFA7E623BE481000C1D494 /* nnn.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8FFA7E523BE481000C1D494 /* nnn.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		E8ED6F912352F41400844026 /* iViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iViewController.swift; sourceTree = "<group>"; };
 		E8EE081820F8EC160063C1B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IIIViewController.swift; sourceTree = "<group>"; };
+		E8FFA7E523BE481000C1D494 /* nnn.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = nnn.plist; sourceTree = "<group>"; };
 		FE111CC510172B61637564C1 /* Pods-myapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myapp.release.xcconfig"; path = "Target Support Files/Pods-myapp/Pods-myapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				E801493623B06C4300464271 /* ShopViewController.swift */,
 				E88F9B9723B26C4600800BA3 /* Utils.swift */,
 				E8C3D47423B505A700C1C89D /* myPageViewController.swift */,
+				E8FFA7E523BE481000C1D494 /* nnn.plist */,
 			);
 			path = myapp;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				E896F1D52257657700D0002D /* MyView.xib in Resources */,
 				E83FB89820EA85A500DE492C /* Test.xib in Resources */,
 				E841B89E20EA576E0031889E /* Assets.xcassets in Resources */,
+				E8FFA7E623BE481000C1D494 /* nnn.plist in Resources */,
 				E802A44D23AED7A500823A09 /* LaunchScreen.storyboard in Resources */,
 				E841B89C20EA576B0031889E /* Main.storyboard in Resources */,
 			);

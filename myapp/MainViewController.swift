@@ -22,6 +22,27 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
     var temp: [Any] = []
     var images: [Any] = ["http://localhost/xyz.jpg", "http://localhost/xyz.jpg", "http://localhost/xyz.jpg", "http://localhost/xyz.jpg"]
 
+    var scrollView = { () -> UIScrollView in
+        let scView = UIScrollView(frame: CGRect(x: 0, y: 60, width: 400, height: 300));
+        scView.isScrollEnabled = true
+        scView.isUserInteractionEnabled = true
+        //        scView.bounces = true
+        //        scView.alwaysBounceHorizontal = true
+        scView.showsHorizontalScrollIndicator = false
+        var i: Int = 0
+        let colorArray: [UIColor] = [UIColor.red, UIColor.yellow, UIColor.green, UIColor.purple, UIColor.orange, UIColor.blue];
+        scView.contentSize = CGSize(width: colorArray.count * 100, height: 300)
+        for item in colorArray {
+            scView.addSubview({
+                let v = UIView(frame: CGRect(x: i * 100, y: 0, width: 100, height: 300));
+                v.backgroundColor = item
+                return v
+            }())
+            i = i + 1
+        }
+        return scView
+    }()
+
     func myClicked() {
         print("点击了")
         //        self.performSegue(withIdentifier: "pppp", sender: nil)
@@ -39,6 +60,9 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
     var view1: UIView? = nil
 
     @IBOutlet weak var myCollectionView: UICollectionView!
+
+
+//    弹框
     @IBAction func popBtn(_ sender: Any) {
         self.navigationController?.modalPresentationStyle = UIModalPresentationStyle.formSheet
         //        let popC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popViewController")
@@ -55,11 +79,6 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         view1 = UIView(frame: CGRect(x: 0, y: 0, width: Utils.width, height: Utils.height))
         view1!.backgroundColor = UIColor.black
         self.view1!.layer.opacity = 0
-
-
-
-
-
         //        添加s手势识别器
         let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(alertViewCallback))
         tapGestureRecogniser.numberOfTapsRequired = 1
@@ -69,7 +88,6 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         viewContent!.backgroundColor = UIColor.white
         viewContent!.layer.opacity = 0
         viewContent?.layer.cornerRadius = 5
-
         //        动画
         UIView.animate(withDuration: 0.2, animations: {
             self.view1!.layer.opacity = 0.5
@@ -81,14 +99,38 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         }) { (c) in
             print(c)
         }
-
-
-
         //      显示弹框
         self.view.addSubview(view1!)
         self.view.addSubview(viewContent!)
     }
-
+    
+    
+    var xxx2:UIViewController?
+    @IBAction func OneController(_ sender: Any) {
+        print((sender as! UIButton).tag)
+        let btn = self.view.viewWithTag(888) as! UIButton
+        print((btn.titleLabel?.text)!)
+        if xxx2==nil{
+            xxx2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "test001")
+            xxx2!.view.frame = CGRect(x: 0, y: 100, width: Utils.width, height: Utils.height)
+            self.addChild(xxx2!)
+            self.view.addSubview(xxx2!.view)
+        }
+    }
+    
+    @IBAction func TwoController(_ sender: Any) {
+        if xxx2 != nil {
+            xxx2?.willMove(toParent: self)
+            xxx2?.view.removeFromSuperview()
+            xxx2?.removeFromParent()
+            xxx2=nil
+        }
+    }
+    
+    
+    
+    
+    
     @objc func alertViewCallback() {
         UIView.animate(withDuration: 0.2, animations: {
             self.view1!.layer.opacity = 0
@@ -136,12 +178,14 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
-
+        print(NSHomeDirectory())
+        
+        UserDefaults.standard.set(try! NSKeyedArchiver.archivedData(withRootObject: "asdas", requiringSecureCoding: false), forKey: "asdasd")
+        UserDefaults.standard.set("wangpengyu", forKey: "name")
 //        UserDefaults的使用
-        UserDefaults.init().setValue("wangpengyu", forKey: "name")
         if let name = UserDefaults.standard.string(forKey: "name") {
             print(name)
-            UserDefaults.standard.removeObject(forKey: "name")
+            UserDefaults.standard.removeObject(forKey: "name0000")
 //            var x = NSKeyedArchiver.archivedData(withRootObject: , requiringSecureCoding: true)
         }
 
@@ -203,32 +247,11 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         view1.layer.addSublayer(layer)
         view1.addSubview(view2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         let myImageView = UIImageView(frame: CGRect(x: 0, y: 50, width: 100, height: 100))
         myImageView.image = UIImage(named: "xxx")
 
         let mybar = UINavigationBar(frame: CGRect(x: 0, y: 100, width: UIScreen.main.bounds.width, height: 400))
-
         mybar.setItems([UINavigationItem(title: "OK000"), UINavigationItem(title: "OK")], animated: true)
-
-
 
         self.view.addSubview(view1)
         self.view.addSubview(myImageView)
@@ -270,10 +293,19 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         //        label.text="Hello World"
         //        self.view.addSubview(label)
 
+
+        self.view.addSubview(scrollView)
     }
 
     @IBAction func toiView(_ sender: Any) {
         self.performSegue(withIdentifier: "nnn", sender: "abcdef22334")
+    }
+
+    func changeViewController() {
+        let xxx = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "test001")
+        xxx.view.frame = self.view.bounds
+        self.addChild(xxx)
+        self.view.addSubview(xxx.view)
     }
 
 

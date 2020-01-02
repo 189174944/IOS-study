@@ -138,16 +138,34 @@
                                     <action selector="popBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iZC-X2-JSm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="888" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCq-Eh-1qT">
+                                <rect key="frame" x="314" y="0.0" width="30" height="30"/>
+                                <state key="normal" title="One"/>
+                                <connections>
+                                    <action selector="OneController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJR-lr-70m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aO3-y1-UN3">
+                                <rect key="frame" x="276" y="0.0" width="30" height="30"/>
+                                <state key="normal" title="Two"/>
+                                <connections>
+                                    <action selector="TwoController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vRJ-J7-V4D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration">
                             <bool key="isElement" value="YES"/>
                         </accessibility>
                         <constraints>
+                            <constraint firstItem="cCq-Eh-1qT" firstAttribute="top" secondItem="AOk-Ba-31z" secondAttribute="top" id="1zz-CK-MNq"/>
+                            <constraint firstItem="aO3-y1-UN3" firstAttribute="top" secondItem="AOk-Ba-31z" secondAttribute="top" id="832-EE-sFl"/>
                             <constraint firstItem="AOk-Ba-31z" firstAttribute="bottom" secondItem="Slv-2S-j8U" secondAttribute="bottom" id="FTu-Op-ZWk"/>
+                            <constraint firstItem="BQu-Iy-lSy" firstAttribute="leading" secondItem="cCq-Eh-1qT" secondAttribute="trailing" id="Fbf-4O-KXL"/>
                             <constraint firstItem="AOk-Ba-31z" firstAttribute="bottom" secondItem="rgN-he-mm4" secondAttribute="bottom" id="J46-Q1-vxH"/>
                             <constraint firstItem="rgN-he-mm4" firstAttribute="leading" secondItem="Slv-2S-j8U" secondAttribute="trailing" constant="8" symbolic="YES" id="Kd8-NH-p9a"/>
                             <constraint firstItem="AOk-Ba-31z" firstAttribute="trailing" secondItem="BQu-Iy-lSy" secondAttribute="trailing" id="QY1-rs-4MK"/>
+                            <constraint firstItem="cCq-Eh-1qT" firstAttribute="leading" secondItem="aO3-y1-UN3" secondAttribute="trailing" constant="8" symbolic="YES" id="fp7-XZ-62e"/>
                             <constraint firstItem="BQu-Iy-lSy" firstAttribute="top" secondItem="AOk-Ba-31z" secondAttribute="top" id="jQt-Ww-eCW"/>
                             <constraint firstItem="Slv-2S-j8U" firstAttribute="leading" secondItem="AOk-Ba-31z" secondAttribute="leading" id="oeW-CV-4uM"/>
                         </constraints>
@@ -571,6 +589,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19r-IV-X9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4263" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zGZ-Ce-Bar">
+            <objects>
+                <viewController storyboardIdentifier="test001" id="SJT-BQ-p4k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uoL-Bs-k5I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feY-ay-yKj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7y3-nW-2aE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HH0-jk-l6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4916" y="90.404797601199405"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zBd-PB-DKl">
