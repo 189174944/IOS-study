@@ -8,4 +8,5 @@ target 'myapp' do
   pod 'HandyJSON', '~> 5.0.0'
   pod 'Reachability', '~> 3.2'
   pod 'KJBannerView', '~> 1.3.0'
+  pod 'SwiftyJSON', '~> 5.0.0'
 end

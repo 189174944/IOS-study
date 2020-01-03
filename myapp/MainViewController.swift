@@ -11,6 +11,7 @@ import UIKit
 import AFNetworking
 import HandyJSON
 import KJBannerView
+import SwiftyJSON
 
 class BasicTypes: HandyJSON {
     var origin: String?
@@ -103,34 +104,34 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         self.view.addSubview(view1!)
         self.view.addSubview(viewContent!)
     }
-    
-    
-    var xxx2:UIViewController?
+
+
+    var xxx2: UIViewController?
     @IBAction func OneController(_ sender: Any) {
         print((sender as! UIButton).tag)
         let btn = self.view.viewWithTag(888) as! UIButton
         print((btn.titleLabel?.text)!)
-        if xxx2==nil{
+        if xxx2 == nil {
             xxx2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "test001")
             xxx2!.view.frame = CGRect(x: 0, y: 100, width: Utils.width, height: Utils.height)
             self.addChild(xxx2!)
             self.view.addSubview(xxx2!.view)
         }
     }
-    
+
     @IBAction func TwoController(_ sender: Any) {
         if xxx2 != nil {
             xxx2?.willMove(toParent: self)
             xxx2?.view.removeFromSuperview()
             xxx2?.removeFromParent()
-            xxx2=nil
+            xxx2 = nil
         }
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     @objc func alertViewCallback() {
         UIView.animate(withDuration: 0.2, animations: {
             self.view1!.layer.opacity = 0
@@ -177,9 +178,39 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
     var i: Int = 100
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad")
-        print(NSHomeDirectory())
-        
+        print("字符串分割", "1:2:3".components(separatedBy: ":").count)
+
+//        let queue = DispatchQueue.main
+//        for i in [1,2,3,4,5,6] {
+//            queue.async {
+//                print("队列\(i)")
+//                sleep(4)
+//            }
+//        }
+
+
+        let af = AFHTTPSessionManager()
+        af.get("http://httpbin.org/get", parameters: nil, progress: { (x) in
+            print("处理中")
+        }, success: { (x, y) in
+            print(JSON(y!)["url"],JSON(y!)["origin"])
+            }) { (task, error) in
+            print("error:", error)
+        }
+
+
+
+
+        let json = JSON.init(parseJSON: "{\"origin\": \"112.97.60.141, 112.97.60.141\",\"url\": \"https://httpbin.org/get\"}")
+
+        print(json["url"])
+        print(json["origin"])
+
+
+//        跳转AppStore的某软件界面
+        UIApplication.shared.openURL(NSURL(string: "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=998252000")! as URL)
+        print("沙盒地址", NSHomeDirectory())
+
         UserDefaults.standard.set(try! NSKeyedArchiver.archivedData(withRootObject: "asdas", requiringSecureCoding: false), forKey: "asdasd")
         UserDefaults.standard.set("wangpengyu", forKey: "name")
 //        UserDefaults的使用
@@ -203,17 +234,17 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         //        self.view.addSubview(myview);
 
 
-        let af = AFHTTPSessionManager()
-        af.get("http://httpbin.org/get", parameters: nil, progress: { (x) in
-            print("处理中")
-        }, success: { (x, y) in
-                //            if let xx = JSONDeserializer<BasicTypes>.deserializeFrom(json: y){
-                //                print(xx.origin)
-                //            }
-                print((y! as? [String: Any])!["origin"]!)
-            }) { (task, error) in
-            print("error", error)
-        }
+//        let af = AFHTTPSessionManager()
+//        af.get("http://httpbin.org/get", parameters: nil, progress: { (x) in
+//            print("处理中")
+//        }, success: { (x, y) in
+//                //            if let xx = JSONDeserializer<BasicTypes>.deserializeFrom(json: y){
+//                //                print(xx.origin)
+//                //            }
+//                print((y! as? [String: Any])!["origin"]!)
+//            }) { (task, error) in
+//            print("error", error)
+//        }
 
         self.view.addSubview(mm)
         let rect = CGRect(x: 200, y: 100, width: 100, height: 100);
