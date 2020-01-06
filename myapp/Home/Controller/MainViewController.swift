@@ -30,12 +30,14 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         //        scView.bounces = true
         //        scView.alwaysBounceHorizontal = true
         scView.showsHorizontalScrollIndicator = false
+//        scView.isPagingEnabled = true
         var i: Int = 0
+        var scrollViewWidth = Int(Utils.width)
         let colorArray: [UIColor] = [UIColor.red, UIColor.yellow, UIColor.green, UIColor.purple, UIColor.orange, UIColor.blue];
-        scView.contentSize = CGSize(width: colorArray.count * 100, height: 300)
+        scView.contentSize = CGSize(width: (colorArray.count * scrollViewWidth), height: 300)
         for item in colorArray {
             scView.addSubview({
-                let v = UIView(frame: CGRect(x: i * 100, y: 0, width: 100, height: 300));
+                let v = UIView(frame: CGRect(x: i * scrollViewWidth, y: 0, width: scrollViewWidth, height: 300));
                 v.backgroundColor = item
                 return v
             }())
@@ -178,6 +180,14 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
     var i: Int = 100
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NetUtil.get()
+
+        let jsonString = "{\"id\":12345,\"color\":\"black\",\"name\":\"cat\"}"
+        if let cat = JSONDeserializer<Cat>.deserializeFrom(json: jsonString) {
+            print(cat.name!)
+        }
+ 
         print("字符串分割", "1:2:3".components(separatedBy: ":").count)
 
 //        let queue = DispatchQueue.main
@@ -189,20 +199,9 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
 //        }
 
 
-        let af = AFHTTPSessionManager()
-        af.get("http://httpbin.org/get", parameters: nil, progress: { (x) in
-            print("处理中")
-        }, success: { (x, y) in
-            print(JSON(y!)["url"],JSON(y!)["origin"])
-            }) { (task, error) in
-            print("error:", error)
-        }
-
-
 
 
         let json = JSON.init(parseJSON: "{\"origin\": \"112.97.60.141, 112.97.60.141\",\"url\": \"https://httpbin.org/get\"}")
-
         print(json["url"])
         print(json["origin"])
 

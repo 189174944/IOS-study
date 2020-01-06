@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locationManager?.requestWhenInUseAuthorization()
         locationManager?.requestAlwaysAuthorization()
         loadLocation()
-        print("版本",UIDevice.current.systemVersion)
+//        print("版本",UIDevice.current.systemVersion)
 
 //        NotificationCenter.default.addObserver(self, selector: #selector("xxx"), name: kReachabilityChangedNotification, object: nil)
         return true
@@ -63,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate:CLLocationManagerDelegate{
     func loadLocation(){
-        print("OK")
+//        print("OK")
         locationManager?.delegate = self
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         if(UIDevice.current.systemVersion >= "8.0"){

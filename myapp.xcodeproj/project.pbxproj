@@ -20,6 +20,7 @@
 		E850825123AA117F00A96F99 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850825023AA117F00A96F99 /* myCollectionViewCell.swift */; };
 		E86533AE23B25B830054B558 /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86533AC23B25B830054B558 /* ShopCollectionViewCell.swift */; };
 		E86533AF23B25B830054B558 /* ShopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86533AD23B25B830054B558 /* ShopCollectionViewCell.xib */; };
+		E87DD33123C2FF2D000230B4 /* NetUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DD33023C2FF2D000230B4 /* NetUtil.swift */; };
 		E88498BA23A460D7009F451D /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88498B923A460D7009F451D /* MyTableViewCell.swift */; };
 		E88F9B9823B26C4600800BA3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F9B9723B26C4600800BA3 /* Utils.swift */; };
 		E896F1D52257657700D0002D /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E896F1D42257657700D0002D /* MyView.xib */; };
@@ -28,6 +29,7 @@
 		E8CB364E23B5AEE200DC04C3 /* VedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB364D23B5AEE200DC04C3 /* VedioViewController.swift */; };
 		E8CB365523B5C34500DC04C3 /* VedioViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB365423B5C34500DC04C3 /* VedioViewController1.swift */; };
 		E8CB365723B5C35700DC04C3 /* VedioViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB365623B5C35700DC04C3 /* VedioViewController3.swift */; };
+		E8E2FAA923BF0FD6009FEFA8 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E2FAA823BF0FD6009FEFA8 /* Cat.swift */; };
 		E8ED6F922352F41400844026 /* iViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6F912352F41400844026 /* iViewController.swift */; };
 		E8EE081920F8EC160063C1B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE081820F8EC160063C1B1 /* MainViewController.swift */; };
 		E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */; };
@@ -62,6 +64,7 @@
 		E86533AC23B25B830054B558 /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
 		E86533AD23B25B830054B558 /* ShopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCollectionViewCell.xib; sourceTree = "<group>"; };
 		E86F9663214DCCE600A7657F /* MyLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLib.xcodeproj; path = ../MyLib/MyLib.xcodeproj; sourceTree = "<group>"; };
+		E87DD33023C2FF2D000230B4 /* NetUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetUtil.swift; sourceTree = "<group>"; };
 		E88498B923A460D7009F451D /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		E88F9B9723B26C4600800BA3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E896F1D42257657700D0002D /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		E8CB365623B5C35700DC04C3 /* VedioViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioViewController3.swift; sourceTree = "<group>"; };
 		E8CB365823B5C53800DC04C3 /* a.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = a.MP4; path = ../../../../Downloads/a.MP4; sourceTree = "<group>"; };
 		E8CB365923B5C53800DC04C3 /* b.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = b.MP4; path = ../../../../Downloads/b.MP4; sourceTree = "<group>"; };
+		E8E2FAA823BF0FD6009FEFA8 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		E8ED6F912352F41400844026 /* iViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iViewController.swift; sourceTree = "<group>"; };
 		E8EE081820F8EC160063C1B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IIIViewController.swift; sourceTree = "<group>"; };
@@ -130,9 +134,11 @@
 		E841B89520EA576B0031889E /* myapp */ = {
 			isa = PBXGroup;
 			children = (
+				E87DD32F23C2FEC2000230B4 /* Utils */,
+				E87DD32E23C2CAA8000230B4 /* Shop */,
+				E8E2FAA723BF0FC0009FEFA8 /* Home */,
 				E8307CFA23B73A8600E9E6A6 /* pop */,
 				E8CB364C23B5AEB300DC04C3 /* video */,
-				E8B17D0623B321A4005E311C /* swiftui */,
 				E86533B023B25B8D0054B558 /* cell */,
 				E841B89620EA576B0031889E /* AppDelegate.swift */,
 				E841B89A20EA576B0031889E /* Main.storyboard */,
@@ -145,12 +151,9 @@
 				E8ED6F912352F41400844026 /* iViewController.swift */,
 				E896F1D6225765B400D0002D /* MyView.swift */,
 				E83FB89920EA85CF00DE492C /* Test.swift */,
-				E8EE081820F8EC160063C1B1 /* MainViewController.swift */,
 				E88498B923A460D7009F451D /* MyTableViewCell.swift */,
 				E850825023AA117F00A96F99 /* myCollectionViewCell.swift */,
 				E802A44F23AED7A500823A09 /* LaunchScreen.storyboard */,
-				E801493623B06C4300464271 /* ShopViewController.swift */,
-				E88F9B9723B26C4600800BA3 /* Utils.swift */,
 				E8C3D47423B505A700C1C89D /* myPageViewController.swift */,
 				E8FFA7E523BE481000C1D494 /* nnn.plist */,
 			);
@@ -182,11 +185,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E8B17D0623B321A4005E311C /* swiftui */ = {
+		E87DD32E23C2CAA8000230B4 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				E801493623B06C4300464271 /* ShopViewController.swift */,
 			);
-			path = swiftui;
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		E87DD32F23C2FEC2000230B4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E88F9B9723B26C4600800BA3 /* Utils.swift */,
+				E87DD33023C2FF2D000230B4 /* NetUtil.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E8CB364C23B5AEB300DC04C3 /* video */ = {
@@ -200,6 +213,31 @@
 				E8CB365623B5C35700DC04C3 /* VedioViewController3.swift */,
 			);
 			path = video;
+			sourceTree = "<group>";
+		};
+		E8E2FAA723BF0FC0009FEFA8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E8E2FAAB23BF102A009FEFA8 /* Controller */,
+				E8E2FAAA23BF0FE7009FEFA8 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E8E2FAAA23BF0FE7009FEFA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8E2FAA823BF0FD6009FEFA8 /* Cat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8E2FAAB23BF102A009FEFA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE081820F8EC160063C1B1 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,12 +386,14 @@
 				E80C5BB020F4A4A8009F8997 /* Test1ViewController.swift in Sources */,
 				E86533AE23B25B830054B558 /* ShopCollectionViewCell.swift in Sources */,
 				E8EF0A3D20F3D69000D6DCBC /* IIIViewController.swift in Sources */,
+				E87DD33123C2FF2D000230B4 /* NetUtil.swift in Sources */,
 				E841B89720EA576B0031889E /* AppDelegate.swift in Sources */,
 				E850825123AA117F00A96F99 /* myCollectionViewCell.swift in Sources */,
 				E83FB89A20EA85CF00DE492C /* Test.swift in Sources */,
 				E8EE081920F8EC160063C1B1 /* MainViewController.swift in Sources */,
 				E8CB364E23B5AEE200DC04C3 /* VedioViewController.swift in Sources */,
 				E8CB365723B5C35700DC04C3 /* VedioViewController3.swift in Sources */,
+				E8E2FAA923BF0FD6009FEFA8 /* Cat.swift in Sources */,
 				E88F9B9823B26C4600800BA3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
