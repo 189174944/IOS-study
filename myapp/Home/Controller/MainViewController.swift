@@ -130,10 +130,6 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         }
     }
 
-
-
-
-
     @objc func alertViewCallback() {
         UIView.animate(withDuration: 0.2, animations: {
             self.view1!.layer.opacity = 0
@@ -154,17 +150,13 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         }
     }
 
-
-
     var xxxm: Int = 100
     @IBOutlet var xxx: Test!
 
     @IBOutlet weak var mytableVIew: UITableView!
 
-
     var refreshControl = UIRefreshControl.init()
     var refreshControl1 = UIRefreshControl.init()
-
 
     var mm: UILabel = {
         let btn = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100));
@@ -174,19 +166,16 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
     }()
 
     @IBOutlet weak var myView: MyView!
-
-
-
     var i: Int = 100
     override func viewDidLoad() {
         super.viewDidLoad()
         
         NetUtil.get()
 
-        let jsonString = "{\"id\":12345,\"color\":\"black\",\"name\":\"cat\"}"
-        if let cat = JSONDeserializer<Cat>.deserializeFrom(json: jsonString) {
-            print(cat.name!)
-        }
+//        let jsonString = "{\"id\":12345,\"color\":\"black\",\"name\":\"cat\"}"
+//        if let cat = JSONDeserializer<Cat>.deserializeFrom(json: jsonString) {
+//            print(cat.name!)
+//        }
  
         print("字符串分割", "1:2:3".components(separatedBy: ":").count)
 
@@ -324,7 +313,7 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         //        self.view.addSubview(label)
 
 
-        self.view.addSubview(scrollView)
+//        self.view.addSubview(scrollView)
     }
 
     @IBAction func toiView(_ sender: Any) {

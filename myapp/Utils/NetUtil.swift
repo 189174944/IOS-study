@@ -44,7 +44,5 @@ extension NetUtil{
                 }) { (task, error) in
                 print("error:", error)
             }
-            
-            Al
         }
 }

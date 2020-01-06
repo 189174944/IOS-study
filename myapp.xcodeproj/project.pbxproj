@@ -105,13 +105,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		E8307CFA23B73A8600E9E6A6 /* pop */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = pop;
-			sourceTree = "<group>";
-		};
 		E841B88A20EA576B0031889E = {
 			isa = PBXGroup;
 			children = (
@@ -134,28 +127,24 @@
 		E841B89520EA576B0031889E /* myapp */ = {
 			isa = PBXGroup;
 			children = (
+				E87DD33323C311D1000230B4 /* storyboard */,
 				E87DD32F23C2FEC2000230B4 /* Utils */,
 				E87DD32E23C2CAA8000230B4 /* Shop */,
 				E8E2FAA723BF0FC0009FEFA8 /* Home */,
-				E8307CFA23B73A8600E9E6A6 /* pop */,
 				E8CB364C23B5AEB300DC04C3 /* video */,
 				E86533B023B25B8D0054B558 /* cell */,
 				E841B89620EA576B0031889E /* AppDelegate.swift */,
-				E841B89A20EA576B0031889E /* Main.storyboard */,
 				E841B89D20EA576E0031889E /* Assets.xcassets */,
-				E841B8A220EA576E0031889E /* Info.plist */,
+				E83FB89920EA85CF00DE492C /* Test.swift */,
 				E83FB89720EA85A500DE492C /* Test.xib */,
+				E896F1D6225765B400D0002D /* MyView.swift */,
 				E896F1D42257657700D0002D /* MyView.xib */,
 				E8EF0A3C20F3D69000D6DCBC /* IIIViewController.swift */,
 				E80C5BAE20F4A4A8009F8997 /* Test1ViewController.swift */,
 				E8ED6F912352F41400844026 /* iViewController.swift */,
-				E896F1D6225765B400D0002D /* MyView.swift */,
-				E83FB89920EA85CF00DE492C /* Test.swift */,
-				E88498B923A460D7009F451D /* MyTableViewCell.swift */,
-				E850825023AA117F00A96F99 /* myCollectionViewCell.swift */,
-				E802A44F23AED7A500823A09 /* LaunchScreen.storyboard */,
 				E8C3D47423B505A700C1C89D /* myPageViewController.swift */,
 				E8FFA7E523BE481000C1D494 /* nnn.plist */,
+				E841B8A220EA576E0031889E /* Info.plist */,
 			);
 			path = myapp;
 			sourceTree = "<group>";
@@ -165,6 +154,8 @@
 			children = (
 				E86533AC23B25B830054B558 /* ShopCollectionViewCell.swift */,
 				E86533AD23B25B830054B558 /* ShopCollectionViewCell.xib */,
+				E88498B923A460D7009F451D /* MyTableViewCell.swift */,
+				E850825023AA117F00A96F99 /* myCollectionViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -200,6 +191,15 @@
 				E87DD33023C2FF2D000230B4 /* NetUtil.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E87DD33323C311D1000230B4 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E841B89A20EA576B0031889E /* Main.storyboard */,
+				E802A44F23AED7A500823A09 /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
 			sourceTree = "<group>";
 		};
 		E8CB364C23B5AEB300DC04C3 /* video */ = {

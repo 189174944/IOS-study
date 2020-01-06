@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-myapp/Pods-myapp-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
 ${BUILT_PRODUCTS_DIR}/KJBannerView/KJBannerView.framework
 ${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework
