@@ -8,16 +8,9 @@
 
 import UIKit
 //import MyLib
-import AFNetworking
 import HandyJSON
 import KJBannerView
 import SwiftyJSON
-
-class BasicTypes: HandyJSON {
-    var origin: String?
-
-    required init() { }
-}
 
 class MainViewController: UIViewController, Abc, UIPopoverPresentationControllerDelegate {
     var temp: [Any] = []
@@ -170,14 +163,23 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NetUtil.get()
-
+        NetUtil.request(url: Api.login, method: .get,params: [
+        "username":"wangpengyu",
+        "password":"asdasdsad"
+        ], callbackSuccess: { (json) in
+            print(json)
+            if let loginResponse = JSONDeserializer<LoginResponse>.deserializeFrom(json: json) {
+                print(loginResponse.data!.token!)
+            }
+        }) { (error) in
+            print(error)
+        }
 //        let jsonString = "{\"id\":12345,\"color\":\"black\",\"name\":\"cat\"}"
 //        if let cat = JSONDeserializer<Cat>.deserializeFrom(json: jsonString) {
 //            print(cat.name!)
 //        }
  
-        print("字符串分割", "1:2:3".components(separatedBy: ":").count)
+//        print("字符串分割", "1:2:3".components(separatedBy: ":").count)
 
 //        let queue = DispatchQueue.main
 //        for i in [1,2,3,4,5,6] {
@@ -187,12 +189,12 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
 //            }
 //        }
 
-
-
-
-        let json = JSON.init(parseJSON: "{\"origin\": \"112.97.60.141, 112.97.60.141\",\"url\": \"https://httpbin.org/get\"}")
-        print(json["url"])
-        print(json["origin"])
+//
+//
+//
+//        let json = JSON.init(parseJSON: "{\"origin\": \"112.97.60.141, 112.97.60.141\",\"url\": \"https://httpbin.org/get\"}")
+//        print(json["url"])
+//        print(json["origin"])
 
 
 //        跳转AppStore的某软件界面
@@ -209,32 +211,14 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
         }
 
         setUpBanner()
-
-        //    NSHomeDirectory()
-        //        NSTemporaryDirectory()
-        //        网络请求
-
-
-
-
         //        let myview = MyView(frame: CGRect(x: 0, y: 200, width: 300, height: 300))
         myView.setOnClickedListener(x2: self)
         //        self.view.addSubview(myview);
 
-
-//        let af = AFHTTPSessionManager()
-//        af.get("http://httpbin.org/get", parameters: nil, progress: { (x) in
-//            print("处理中")
-//        }, success: { (x, y) in
-//                //            if let xx = JSONDeserializer<BasicTypes>.deserializeFrom(json: y){
-//                //                print(xx.origin)
-//                //            }
-//                print((y! as? [String: Any])!["origin"]!)
-//            }) { (task, error) in
-//            print("error", error)
-//        }
-
-        self.view.addSubview(mm)
+//        self.view.addSubview(mm)
+        
+        
+        
         let rect = CGRect(x: 200, y: 100, width: 100, height: 100);
         let view1: UIView = UIView(frame: rect)
         view1.backgroundColor = UIColor.red
@@ -265,15 +249,17 @@ class MainViewController: UIViewController, Abc, UIPopoverPresentationController
 
         view1.layer.addSublayer(layer)
         view1.addSubview(view2)
+//        self.view.addSubview(view1)
+        
 
-        let myImageView = UIImageView(frame: CGRect(x: 0, y: 50, width: 100, height: 100))
-        myImageView.image = UIImage(named: "xxx")
+//        let myImageView = UIImageView(frame: CGRect(x: 0, y: 50, width: 100, height: 100))
+//        myImageView.image = UIImage(named: "xxx")
+//        self.view.addSubview(myImageView)
 
         let mybar = UINavigationBar(frame: CGRect(x: 0, y: 100, width: UIScreen.main.bounds.width, height: 400))
         mybar.setItems([UINavigationItem(title: "OK000"), UINavigationItem(title: "OK")], animated: true)
 
-        self.view.addSubview(view1)
-        self.view.addSubview(myImageView)
+        
         //        self.view.addSubview(mybar)
 
         refreshControl.attributedTitle = NSAttributedString.init(string: "下拉刷新")
@@ -384,7 +370,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MyTableViewCell? = mytableVIew.dequeueReusableCell(withIdentifier: "abcdef") as? MyTableViewCell
-        cell!.textLabel?.text = "Hello world"
+//        cell!.textLabel?.text = "Hello world"
         cell!.mytableViewCell.text = "00000"
         return cell!
     }

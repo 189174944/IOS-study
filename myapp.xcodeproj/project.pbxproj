@@ -18,6 +18,8 @@
 		E841B89C20EA576B0031889E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E841B89A20EA576B0031889E /* Main.storyboard */; };
 		E841B89E20EA576E0031889E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E841B89D20EA576E0031889E /* Assets.xcassets */; };
 		E850825123AA117F00A96F99 /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850825023AA117F00A96F99 /* myCollectionViewCell.swift */; };
+		E853A63B23C4547200EB3D2E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853A63A23C4547200EB3D2E /* UserInfo.swift */; };
+		E853A63E23C45CAA00EB3D2E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853A63D23C45CAA00EB3D2E /* Alert.swift */; };
 		E86533AE23B25B830054B558 /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86533AC23B25B830054B558 /* ShopCollectionViewCell.swift */; };
 		E86533AF23B25B830054B558 /* ShopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86533AD23B25B830054B558 /* ShopCollectionViewCell.xib */; };
 		E87DD33123C2FF2D000230B4 /* NetUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DD33023C2FF2D000230B4 /* NetUtil.swift */; };
@@ -61,6 +63,8 @@
 		E841B89D20EA576E0031889E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E841B8A220EA576E0031889E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E850825023AA117F00A96F99 /* myCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
+		E853A63A23C4547200EB3D2E /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		E853A63D23C45CAA00EB3D2E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E86533AC23B25B830054B558 /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
 		E86533AD23B25B830054B558 /* ShopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCollectionViewCell.xib; sourceTree = "<group>"; };
 		E86F9663214DCCE600A7657F /* MyLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLib.xcodeproj; path = ../MyLib/MyLib.xcodeproj; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 		E841B89520EA576B0031889E /* myapp */ = {
 			isa = PBXGroup;
 			children = (
+				E853A63C23C45C9200EB3D2E /* component */,
 				E87DD33323C311D1000230B4 /* storyboard */,
 				E87DD32F23C2FEC2000230B4 /* Utils */,
 				E87DD32E23C2CAA8000230B4 /* Shop */,
@@ -147,6 +152,14 @@
 				E841B8A220EA576E0031889E /* Info.plist */,
 			);
 			path = myapp;
+			sourceTree = "<group>";
+		};
+		E853A63C23C45C9200EB3D2E /* component */ = {
+			isa = PBXGroup;
+			children = (
+				E853A63D23C45CAA00EB3D2E /* Alert.swift */,
+			);
+			path = component;
 			sourceTree = "<group>";
 		};
 		E86533B023B25B8D0054B558 /* cell */ = {
@@ -228,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E2FAA823BF0FD6009FEFA8 /* Cat.swift */,
+				E853A63A23C4547200EB3D2E /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -377,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E853A63B23C4547200EB3D2E /* UserInfo.swift in Sources */,
 				E896F1D7225765B400D0002D /* MyView.swift in Sources */,
 				E8C3D47523B505A700C1C89D /* myPageViewController.swift in Sources */,
 				E88498BA23A460D7009F451D /* MyTableViewCell.swift in Sources */,
@@ -394,6 +409,7 @@
 				E8CB364E23B5AEE200DC04C3 /* VedioViewController.swift in Sources */,
 				E8CB365723B5C35700DC04C3 /* VedioViewController3.swift in Sources */,
 				E8E2FAA923BF0FD6009FEFA8 /* Cat.swift in Sources */,
+				E853A63E23C45CAA00EB3D2E /* Alert.swift in Sources */,
 				E88F9B9823B26C4600800BA3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

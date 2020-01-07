@@ -7,10 +7,33 @@
 //
 import HandyJSON
 
+
+class Response: HandyJSON {
+    var code: Int?
+    var data: [Cat]?
+    var info: String?
+
+    required init() {}
+}
+
 class Cat: HandyJSON{
     var name: String?
     var id: Int?
     var color: String?
 
+    required init() {}
+}
+
+
+class LoginResponse: HandyJSON {
+    var code: Int?
+    var data: LoginInfo?
+    var info: String?
+
+    required init() {}
+}
+
+class LoginInfo: HandyJSON{
+    var token: String?
     required init() {}
 }

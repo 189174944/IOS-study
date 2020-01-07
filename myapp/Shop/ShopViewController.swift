@@ -1,6 +1,7 @@
 import UIKit
 import WebKit
 import iAd
+import HandyJSON
 
 class ShopViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
@@ -60,6 +61,32 @@ class ShopViewController: UIViewController,UICollectionViewDelegate,UICollection
         m.refreshControl = rc
         return m
     }()
+    
+    
+    
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBAction func login(_ sender: Any) {
+        NetUtil.request(url: Api.getUserInfo, method: .post,params: [
+            "username":username.text!,
+            "password":password.text!
+         ], callbackSuccess: { (json) in
+             if let loginResponse = JSONDeserializer<BaseResponse<UserInfo>>.deserializeFrom(json: json) {
+                 print(loginResponse.data!)
+                Alert.showAlert(context: self, title: "信息", message: loginResponse.info!, ensureCallable: { (action) in
+                    print("点击了确认！")
+                }) {
+                    print("弹框显示完成！")
+                }
+             }
+         }) { (error) in
+             print(error)
+         }
+    }
+    
+    
+    
     
     var name:String?=nil
     override func viewDidLoad() {

@@ -36,19 +36,16 @@ class MyView: UIView {
         super.init(coder: aDecoder)
         initFromXIB()
         print("aDecoder")
-        self.backgroundColor = UIColor.red
+//        self.backgroundColor = UIColor.red
 //        self.layer.borderWidth=20
     }
     
     func initFromXIB() {
-
-  
         let bundle = Bundle.init(path: "mxib")
         let nib = UINib(nibName: "MyView", bundle: bundle)
         content = nib.instantiate(withOwner: self, options: nil)[1] as? UIView
         content.frame = bounds
         self.addSubview(content)
-        
     }
     
     
